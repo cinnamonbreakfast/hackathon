@@ -518,6 +518,13 @@ h1.welcome {
 	border: none;
 	margin-bottom: 15px;
 	border-bottom: 1px solid #cbcbcb;
+	display: inline-block;
+}
+#loan .max {
+	display: inline-block;
+}
+#loan .max.red {
+	color: red;
 }
 #loan input[type="text"]:active,
 #loan input[type="text"]:focus,

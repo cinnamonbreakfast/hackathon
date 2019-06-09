@@ -52,7 +52,12 @@ $("#apply-loan").click(function(){
 	});
 })
 
-var limit = 99;
+var limit = 999;
+
+function addLimits(lim){
+	limit = lim;
+	$("#loan .max").text("/"+limit);
+}
 
 $("#loan-val").keypress(function validate(evt) {
 	var theEvent = evt || window.event;
@@ -75,11 +80,13 @@ $("#loan-val").keypress(function validate(evt) {
 	{
 		$("input[type='text']").css({
 			'border-bottom':' 1px solid red'
-		})
+		});
+		$("#loan .max").addClass("red");
 	} else {
 		$("input[type='text']").css({
 			'border-bottom':' 1px solid #cbcbcb'
-		})
+		});
+		$("#loan .max").removeClass("red");
 	}
 })
 
