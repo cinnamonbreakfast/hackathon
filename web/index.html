@@ -7,6 +7,23 @@
 </head>
 <body>
 
+	<div id="loan-pop-bg">
+		<div id="loan-pop">
+			<h1>Instant Loan</h1>
+			<p>Get instant access to money based on your score.</p>
+		
+			<form id="loan">
+				<p class="imp">Enter amount</p>
+				<input type="text" id="loan-val" name="amount" value="0.00">
+				<p class="error"></p>
+				<input type="submit" value="Pull">
+				<input type="button" id="cancel" class="clear" value="Cancel">
+			</form>
+
+		</div>
+	</div>
+	
+
 	<div id="navigation">
 		<div class="nav-band nav-logo">
 			<div class="logo"></div>
@@ -51,7 +68,7 @@
 					</div>
 
 					<div class="card color">
-						<div class="apply">Apply</div>
+						<div id="apply-loan" class="apply">Apply</div>
 						<h2>Instant Loan</h2>
 						<p>Get a loan in no-time</p>
 
@@ -139,6 +156,7 @@
 
 </body>
 
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
 <script type="text/javascript" src="js/custom.js"></script>
 
 </html>
